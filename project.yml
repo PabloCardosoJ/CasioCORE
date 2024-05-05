@@ -1,0 +1,24 @@
+:project:
+  :build_root: Build/ceedling/ # Directory where ceedling will place its output 
+  :release_build: TRUE
+
+:paths:
+  :test:
+    - test/**     # directory where the unit testing are
+  :source:
+    - app/**      # directory where the functions to test are
+
+:plugins: 
+  :load_paths:
+    - "#{Ceedling.load_path}"
+  :enabled:
+    - stdout_pretty_tests_report
+    - gcov
+
+  # enable and configure code coverage
+:gcov:
+  :abort_on_uncovered: true
+  :utilities:
+    - gcovr
+  :reports:
+    - HtmlDetailed

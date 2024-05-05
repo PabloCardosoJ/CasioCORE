@@ -1,0 +1,72 @@
+---
+:source:
+  :path: test
+  :file: test_queue.c
+:successes:
+- :test: test__Queue_initQueue__char_queue
+  :line: 26
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__writeData
+  :line: 51
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__writeData_struct
+  :line: 75
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue_writeData_pointer
+  :line: 121
+  :message: ''
+  :unity_test_time: 0
+- :test: test__writeData_pointer_overflow
+  :line: 156
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__readData
+  :line: 188
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__readData_struct
+  :line: 216
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue_readData_pointer
+  :line: 258
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__isQueueEmpty
+  :line: 286
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue__flushQueue
+  :line: 312
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue_readNoData
+  :line: 337
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue_WriteInFullBuffer
+  :line: 360
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 12
+  :passed: 12
+  :failed: 0
+  :ignored: 0
+:stdout:
+- Write data test succeed
+- Write struct test succeed
+- Write pointer overflow succeed
+- Read data test succeed
+- Read struct test succeed
+- Read pointer test succeed
+- Empty queue test succeed
+- Flush queue test succeed
+- Read No data test succeed
+- Read No data test succeed
+:time: 0.00884070000029169

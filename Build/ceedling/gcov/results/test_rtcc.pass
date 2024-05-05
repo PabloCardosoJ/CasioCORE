@@ -1,0 +1,53 @@
+---
+:source:
+  :path: test
+  :file: test_rtcc.c
+:successes:
+- :test: test__initClock
+  :line: 22
+  :message: ''
+  :unity_test_time: 0
+- :test: test__setTime
+  :line: 35
+  :message: ''
+  :unity_test_time: 0
+- :test: test__setDate
+  :line: 52
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getTime
+  :line: 69
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getDate
+  :line: 85
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getAlarm
+  :line: 105
+  :message: ''
+  :unity_test_time: 0
+- :test: test__periodicTask
+  :line: 121
+  :message: ''
+  :unity_test_time: 0
+- :test: test__leapYear
+  :line: 153
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 8
+  :passed: 8
+  :failed: 0
+  :ignored: 0
+:stdout:
+- initClock test succeed
+- setTime test succeed
+- setDate test succeed
+- getTime test succeed
+- getDate test succeed
+- getDate test succeed
+- periodicTask test succeed
+:time: 0.009065399994142354

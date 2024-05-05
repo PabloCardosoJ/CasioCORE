@@ -1,0 +1,77 @@
+---
+:source:
+  :path: test
+  :file: test_scheduler.c
+:successes:
+- :test: test__initScheduler
+  :line: 42
+  :message: ''
+  :unity_test_time: 0
+- :test: test__stopTask
+  :line: 57
+  :message: ''
+  :unity_test_time: 0
+- :test: test__stopNonExistingTask
+  :line: 84
+  :message: ''
+  :unity_test_time: 0
+- :test: test__stopMultipleTasks
+  :line: 104
+  :message: ''
+  :unity_test_time: 0
+- :test: test__stopTimer
+  :line: 148
+  :message: ''
+  :unity_test_time: 0
+- :test: test__stopMultipleTimers
+  :line: 183
+  :message: ''
+  :unity_test_time: 0
+- :test: test__reloadTimer
+  :line: 229
+  :message: ''
+  :unity_test_time: 0
+- :test: test__registerTask
+  :line: 263
+  :message: ''
+  :unity_test_time: 0
+- :test: test__startNonExistingTask
+  :line: 285
+  :message: ''
+  :unity_test_time: 0
+- :test: test__periodTask
+  :line: 302
+  :message: ''
+  :unity_test_time: 0
+- :test: test__registerTimer
+  :line: 323
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getTimer
+  :line: 340
+  :message: ''
+  :unity_test_time: 0
+- :test: test__startTimer
+  :line: 359
+  :message: ''
+  :unity_test_time: 0
+- :test: test__startTask
+  :line: 378
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 14
+  :passed: 14
+  :failed: 0
+  :ignored: 0
+:stdout:
+- initScheduler test succeed
+- Test stopTask function succeed
+- Test stop non exisisting task succeed
+- Test stopMultipleTasks function succeed
+- Test stopMultipleTimers function succeed
+- Test start non exisisting task succeed
+- Test startTask function succeed
+:time: 3.045911699999124
