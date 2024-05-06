@@ -235,11 +235,8 @@ uint8_t Rtcc_getAlarm( Rtcc_Clock *rtcc, uint8_t *hour, uint8_t *minutes )
 */
 void Rtcc_clearAlarm( Rtcc_Clock *rtcc )
 {
-   if ( ( rtcc->tm_hour == rtcc->al_hour ) && ( rtcc->tm_min == rtcc->al_min ) )
-   {
-        rtcc->ctrl.bits.al_active = 0;
-        rtcc->ctrl.bits.al_set = 0;
-   }
+    rtcc->ctrl.bits.al_active = 0;
+    rtcc->ctrl.bits.al_set = 0;
 }
 
 

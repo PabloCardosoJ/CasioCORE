@@ -19,6 +19,8 @@ extern void test__getDate();
 extern void test__getAlarm();
 extern void test__periodicTask();
 extern void test__leapYear(void);
+extern void test__ClearAlarm(void);
+extern void test__Rtcc_getAlarmFlag(void);
 
 
 /*=======Mock Management=====*/
@@ -88,14 +90,16 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_rtcc.c");
-  run_test(test__initClock, "test__initClock", 22);
-  run_test(test__setTime, "test__setTime", 35);
-  run_test(test__setDate, "test__setDate", 52);
-  run_test(test__getTime, "test__getTime", 69);
-  run_test(test__getDate, "test__getDate", 85);
-  run_test(test__getAlarm, "test__getAlarm", 105);
-  run_test(test__periodicTask, "test__periodicTask", 121);
-  run_test(test__leapYear, "test__leapYear", 153);
+  run_test(test__initClock, "test__initClock", 26);
+  run_test(test__setTime, "test__setTime", 39);
+  run_test(test__setDate, "test__setDate", 56);
+  run_test(test__getTime, "test__getTime", 79);
+  run_test(test__getDate, "test__getDate", 95);
+  run_test(test__getAlarm, "test__getAlarm", 115);
+  run_test(test__periodicTask, "test__periodicTask", 131);
+  run_test(test__leapYear, "test__leapYear", 163);
+  run_test(test__ClearAlarm, "test__ClearAlarm", 176);
+  run_test(test__Rtcc_getAlarmFlag, "test__Rtcc_getAlarmFlag", 194);
 
   return UnityEnd();
 }

@@ -3,6 +3,10 @@
 #include <time.h>
 
 
+#define TRUE 1
+#define FALSE 0
+
+
 Rtcc_Clock Rtcc;
 
 
@@ -19,6 +23,11 @@ void tearDown(void)
 }
 
 
+/**
+ * @brief   Test Rtcc_clockInit function
+ *
+ * The test verify that the clock is initialized
+ */
 void test__initClock()
 {
     Rtcc_clockInit( &Rtcc );
@@ -32,6 +41,12 @@ void test__initClock()
 }
 
 
+
+/**
+ * @brief Test setTime Function
+ * 
+ * The test verify if setTime function works as intended
+*/
 void test__setTime()
 {
     uint8_t success = Rtcc_setTime( &Rtcc, 22, 29, 6 );
@@ -39,40 +54,60 @@ void test__setTime()
     uint8_t mError = Rtcc_setTime( &Rtcc, 10, 70, 6 );
     uint8_t sError = Rtcc_setTime( &Rtcc, 17, 5, 80 );
 
-    TEST_ASSERT_EQUAL( 1, success );
-    TEST_ASSERT_EQUAL( 0, hError );
-    TEST_ASSERT_EQUAL( 0, mError );
-    TEST_ASSERT_EQUAL( 0, sError );
+    TEST_ASSERT_EQUAL( TRUE, success );
+    TEST_ASSERT_EQUAL( FALSE, hError );
+    TEST_ASSERT_EQUAL( FALSE, mError );
+    TEST_ASSERT_EQUAL( FALSE, sError );
 
 
     printf( "setTime test succeed" );
 }
 
 
+/**
+ * @brief Test setDate Function
+ * 
+ * The test verify if setDate works as intended, it tries to put some invalid
+ * values and see if the answer is the expected
+*/
 void test__setDate()
 {
     uint8_t success = Rtcc_setDate( &Rtcc, 20, 7, 2002, 0 );
     uint8_t dError = Rtcc_setDate( &Rtcc, 35, 2, 1900, 1 );
+    uint8_t dError2 = Rtcc_setDate( &Rtcc, 0, 2, 1800, 1 );
     uint8_t mError = Rtcc_setDate( &Rtcc, 10, 70, 1950, 2 );
     uint8_t yError = Rtcc_setDate( &Rtcc, 31, 6, 2200, 3 );
+    uint8_t wError = Rtcc_setDate( &Rtcc, 3, 5, 1956, 7 );
+    uint8_t aError = Rtcc_setDate( &Rtcc, 40, 0, 2200, 7 );
 
-    TEST_ASSERT_EQUAL( 1, success );
-    TEST_ASSERT_EQUAL( 0, dError );
-    TEST_ASSERT_EQUAL( 0, mError );
-    TEST_ASSERT_EQUAL( 0, yError );
+    TEST_ASSERT_EQUAL( TRUE, success );
+    TEST_ASSERT_EQUAL( FALSE, dError );
+    TEST_ASSERT_EQUAL( FALSE, dError2 );
+    TEST_ASSERT_EQUAL( FALSE, mError );
+    TEST_ASSERT_EQUAL( FALSE, yError );
+    TEST_ASSERT_EQUAL(FALSE, wError);
+    TEST_ASSERT_EQUAL( FALSE, aError);
 
 
     printf( "setDate test succeed" );
 }
 
 
+
+/**
+ * @brief Test getTime Function
+ * 
+ * The test verify sets a time and uses getTime to see
+ * if it gets the correct value
+*/
 void test__getTime()
 {
     uint8_t hour;
     uint8_t min;
     uint8_t sec;
     
-    Rtcc_setTime( &Rtcc, 22, 29, 6 );Rtcc_getTime(&Rtcc, &hour, &min, &sec);
+    Rtcc_setTime( &Rtcc, 22, 29, 6 );
+    Rtcc_getTime(&Rtcc, &hour, &min, &sec);
 
     TEST_ASSERT_EQUAL( 22, hour );
     TEST_ASSERT_EQUAL( 29, min );
@@ -82,6 +117,12 @@ void test__getTime()
 }
 
 
+/**
+ * @brief Test getDate Function
+ * 
+ * The test verify sets a date and uses getDate to see
+ * if it gets the correct value
+*/
 void test__getDate()
 {
     uint8_t day;
@@ -102,6 +143,12 @@ void test__getDate()
 }
 
 
+/**
+ * @brief Test getAlarm Function
+ * 
+ * The test verify sets an alarm and uses getAlarm to see
+ * if it gets the correct value
+*/
 void test__getAlarm()
 {
     uint8_t hour;
@@ -118,6 +165,12 @@ void test__getAlarm()
 }
 
 
+/**
+ * @brief Test periodicTask Function
+ * 
+ * The test verify time and date values are correctly updated
+ * when periodicTask function is used
+*/
 void test__periodicTask()
 {
     long t1 = milliseconds();
@@ -157,6 +210,49 @@ void test__leapYear(void)
     TEST_ASSERT_EQUAL(29, Rtcc.mt_days[2]);
 }
 
+
+/**
+ * @brief test ClearAlarm function
+ * 
+ * This test checks if ClearAlarm function works as intended
+*/
+void test__ClearAlarm(void)
+{
+    Rtcc_clockInit( &Rtcc );
+    Rtcc_setAlarm( &Rtcc, 5, 5 );
+    Rtcc_setTime( &Rtcc, 5, 5, 0);
+
+    Rtcc_clearAlarm( &Rtcc );
+
+    TEST_ASSERT_EQUAL( FALSE, Rtcc.ctrl.bits.al_active );
+    TEST_ASSERT_EQUAL( FALSE, Rtcc.ctrl.bits.al_set );
+}
+
+
+/**
+ * @brief test getAlarmFlag function
+ * 
+ * This test checks if Rtcc_getAlarmFlag function works as intended
+*/
+void test__Rtcc_getAlarmFlag(void)
+{
+    Rtcc_clockInit( &Rtcc );
+    Rtcc_setTime( &Rtcc, 5, 5, 0);
+    Rtcc_setAlarm( &Rtcc, 5, 5 );
+
+    Rtcc_periodicTask( &Rtcc);
+
+    uint8_t alarmFlagT = Rtcc_getAlarmFlag( &Rtcc );
+
+    Rtcc_setTime( &Rtcc, 5, 7, 0);
+    Rtcc_periodicTask( &Rtcc);
+    Rtcc_clearAlarm( &Rtcc );
+
+    uint8_t alarmFlagF = Rtcc_getAlarmFlag( &Rtcc );
+
+    TEST_ASSERT_EQUAL( TRUE, alarmFlagT );
+    TEST_ASSERT_EQUAL( FALSE, alarmFlagF );
+}
 
 
 long milliseconds( void )
