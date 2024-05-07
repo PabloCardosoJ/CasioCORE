@@ -203,11 +203,24 @@ void test__periodicTask()
  * This test checks if February gets the correct number of days depending on whether
  * the year is a leap year or not
 */
-void test__leapYear(void)
+void test__leapYear_2024(void)
 {
     Rtcc_setDate( &Rtcc, 31, 12, 2024, 5 );
 
     TEST_ASSERT_EQUAL(29, Rtcc.mt_days[2]);
+}
+
+/**
+ * @brief test leapYear2001 
+ * 
+ * This test checks if February gets the correct number of days depending on whether
+ * the year is a leap year or not
+*/
+void test__leapYear_2001(void)
+{
+    Rtcc_setDate( &Rtcc, 31, 12, 2001, 5 );
+
+    TEST_ASSERT_EQUAL(28, Rtcc.mt_days[2]);
 }
 
 
@@ -253,6 +266,49 @@ void test__Rtcc_getAlarmFlag(void)
     TEST_ASSERT_EQUAL( TRUE, alarmFlagT );
     TEST_ASSERT_EQUAL( FALSE, alarmFlagF );
 }
+
+
+/**
+ * @brief test setAlarm function
+ * 
+ * This function test all the posible scenarios of setAlarm and verifies if
+ * the function works as intended
+*/
+void test__Rtcc_setAlarm(void)
+{
+    uint8_t res1 = Rtcc_setAlarm( &Rtcc, -1, -1);
+    uint8_t res2 = Rtcc_setAlarm( &Rtcc, 24, 60);
+    uint8_t res3 = Rtcc_setAlarm( &Rtcc, 24, 40);
+    uint8_t res4 = Rtcc_setAlarm( &Rtcc, 20, 60);
+
+    TEST_ASSERT_EQUAL( FALSE, res1 );
+    TEST_ASSERT_EQUAL( FALSE, res2 );
+    TEST_ASSERT_EQUAL( FALSE, res3 );
+    TEST_ASSERT_EQUAL( FALSE, res4 );
+}
+
+
+/**
+ * @brief test periodicTask when year is 2100
+ * 
+ * This test verify if periodicTask set year as 1900 when year gets bigger
+ * than 2100
+*/
+void Rtcc_periodictTask_Year_Bigger_Than_2100(void)
+{
+    uint8_t day, month, weekday;
+    uint16_t year;
+
+    Rtcc_setDate( &Rtcc, 31, 12, 2100, 3 );
+    Rtcc_setTime( &Rtcc, 23, 59, 59 );
+
+    Rtcc_periodicTask( &Rtcc );
+
+    Rtcc_getDate( &Rtcc, &day, &month, &year, &weekday );
+
+    TEST_ASSERT_EQUAL( 1900, year );
+}
+
 
 
 long milliseconds( void )

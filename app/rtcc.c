@@ -108,10 +108,10 @@ uint8_t Rtcc_setTime( Rtcc_Clock *rtcc, uint8_t hour, uint8_t minutes, uint8_t s
  * This function sets the clock's date
  * 
  * @param rtcc[in] Pointer to a Rtcc_Clock variable. This is the clock control struct
- * @param day[in] Day of the month
- * @param month[in] Actual month
- * @param year[in] Year value
- * @param weekday[in] Day of the week
+ * @param day[in] Day of the month. Values from 1 to 31
+ * @param month[in] Actual month.Values from 1 to 12
+ * @param year[in] Year value. Values from 1900 to 2100
+ * @param weekday[in] Day of the week. Values from 0 to 6
  * 
  * @retval True if the time were settled, otherwise FALSE
 */
