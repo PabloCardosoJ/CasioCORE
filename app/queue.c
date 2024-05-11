@@ -57,32 +57,23 @@ uint8_t Queue_writeData( Que_Queue *queue, void *data )
     memcpy( queue->Buffer + (queue->Head * queue->Size), data, queue->Size); // Put the data into the buffer
 
 
-    if( !( memcmp( ( queue->Buffer + (queue->Head * queue->Size) ), data, queue->Size) ) )
+    // Info has been copied
+    exit = TRUE;
+    queue->Empty = FALSE;
+    queue->Head++;
+
+
+    if ( queue->Head == queue->Elements )
     {
-        // Info has been copied
-        exit = TRUE;
-        queue->Empty = FALSE;
-        queue->Head++;
-
-
-        if ( queue->Head == queue->Elements )
-        {
-            queue->Head = 0;
-        }
-
-
-        if ( queue->Head == queue->Tail )
-        {
-            queue->Full = TRUE;
-        }
-
-
+        queue->Head = 0;
     }
-    else
+
+
+    if ( queue->Head == queue->Tail )
     {
-        // Info has not been copied
-        exit = FALSE;
+        queue->Full = TRUE;
     }
+
 
     return exit;
 }
@@ -107,25 +98,20 @@ uint8_t Queue_readData( Que_Queue *queue, void *data )
 
         memcpy( data, ( queue->Buffer + ( queue->Tail * queue->Size ) ), queue->Size );
 
-        if ( !( memcmp( data, ( queue->Buffer + ( queue->Tail * queue->Size ) ) , queue->Size ) ) )
+        exit = TRUE;
+        queue->Full = FALSE;                            // Queue is not full anymore
+        queue->Tail++;
+        
+
+        if ( queue->Tail == queue->Elements)
         {
-
-            exit = TRUE;
-            queue->Full = FALSE;                            // Queue is not full anymore
-            queue->Tail++;
-            
-
-            if ( queue->Tail == queue->Elements)
-            {
-                queue->Tail = 0;                            // Go to the beginning
-            }
+            queue->Tail = 0;                            // Go to the beginning
+        }
 
 
-            if ( queue->Tail == queue->Head )
-            {
-                queue->Empty = TRUE;                        // Queue is empty
-            }
-
+        if ( queue->Tail == queue->Head )
+        {
+            queue->Empty = TRUE;                        // Queue is empty
         }
 
     }

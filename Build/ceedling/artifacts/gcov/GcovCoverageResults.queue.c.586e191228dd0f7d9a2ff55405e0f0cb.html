@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <th scope="row">Date:</th>
-      <td>2024-05-06 17:24:09</td>
+      <td>2024-05-11 09:39:17</td>
     </tr>
   </table>
 </div>
@@ -41,9 +41,9 @@
     </tr>
     <tr>
       <th scope="row">Lines:</th>
-      <td>35</td>
-      <td>36</td>
-      <td class="coverage-high">97.2%</td>
+      <td>33</td>
+      <td>33</td>
+      <td class="coverage-high">100.0%</td>
     </tr>
     <tr>
       <th scope="row">Functions:</th>
@@ -53,9 +53,9 @@
     </tr>
     <tr>
       <th scope="row">Branches:</th>
-      <td>11</td>
-      <td>14</td>
-      <td class="coverage-medium">78.6%</td>
+      <td>10</td>
+      <td>10</td>
+      <td class="coverage-high">100.0%</td>
     </tr>
   </table>
 </div>
@@ -73,11 +73,11 @@
       <th>Call count</th>
       <th>Block coverage</th>
     </tr>
-    <tr><td><a href="#l161">Queue_flushQueue (line 161)</a></td><td>called 78 times, returned 78 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l33">Queue_initQueue (line 33)</a></td><td>called 1955 times, returned 1955 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l146">Queue_isQueueEmpty (line 146)</a></td><td>called 78 times, returned 78 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l101">Queue_readData (line 101)</a></td><td>called 471 times, returned 471 times</td><td>100.0%</td></tr>
-    <tr><td><a href="#l52">Queue_writeData (line 52)</a></td><td>called 1407 times, returned 1407 times</td><td>88.0%</td></tr>
+    <tr><td><a href="#l147">Queue_flushQueue (line 147)</a></td><td>called 12 times, returned 12 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l33">Queue_initQueue (line 33)</a></td><td>called 342 times, returned 342 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l132">Queue_isQueueEmpty (line 132)</a></td><td>called 12 times, returned 12 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l92">Queue_readData (line 92)</a></td><td>called 104 times, returned 104 times</td><td>100.0%</td></tr>
+    <tr><td><a href="#l52">Queue_writeData (line 52)</a></td><td>called 247 times, returned 247 times</td><td>100.0%</td></tr>
   </table>
 </details>
 
@@ -320,7 +320,7 @@
       <td class="lineno"><a id="l33" href="#l33">33</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">Queue_initQueue</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -334,35 +334,35 @@
       <td class="lineno"><a id="l35" href="#l35">35</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="w">   </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l36" href="#l36">36</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="w">   </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l37" href="#l37">37</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="w">   </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l38" href="#l38">38</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="w">   </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l39" href="#l39">39</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1955</td>
+      <td class="linecount coveredLine">342</td>
       <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
@@ -453,7 +453,7 @@
       <td class="lineno"><a id="l52" href="#l52">52</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1407</td>
+      <td class="linecount coveredLine">247</td>
       <td class="src coveredLine"><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">Queue_writeData</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
@@ -488,7 +488,7 @@
       <td class="lineno"><a id="l57" href="#l57">57</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1407</td>
+      <td class="linecount coveredLine">247</td>
       <td class="src coveredLine"><span class="w">    </span><span class="n">memcpy</span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Buffer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">),</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">);</span><span class="w"> </span><span class="c1">// Put the data into the buffer</span></td>
     </tr>
     <tr class="source-line">
@@ -508,478 +508,471 @@
     <tr class="source-line">
       <td class="lineno"><a id="l60" href="#l60">60</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">1/2</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 1407 times.</div>
-          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount partialCoveredLine">1407</td>
-      <td class="src partialCoveredLine"><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="w"> </span><span class="n">memcmp</span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Buffer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">)</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">    </span><span class="c1">// Info has been copied</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l61" href="#l61">61</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l62" href="#l62">62</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="c1">// Info has been copied</span></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l63" href="#l63">63</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="o">++</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l64" href="#l64">64</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l65" href="#l65">65</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="o">++</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l66" href="#l66">66</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">2/2</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 61 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 186 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l67" href="#l67">67</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">    </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l68" href="#l68">68</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">2/2</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 314 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 1093 times.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount coveredLine">61</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l69" href="#l69">69</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l70" href="#l70">70</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">314</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l71" href="#l71">71</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l72" href="#l72">72</a></td>
       <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">2/2</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 61 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 186 times.</div>
+        </div>
+        </details>
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l73" href="#l73">73</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">    </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l74" href="#l74">74</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">2/2</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 314 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 1093 times.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount coveredLine">61</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l75" href="#l75">75</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">{</span></td>
+      <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l76" href="#l76">76</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">314</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l77" href="#l77">77</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l78" href="#l78">78</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">247</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">exit</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l79" href="#l79">79</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l80" href="#l80">80</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l81" href="#l81">81</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="k">else</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l82" href="#l82">82</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">{</span></td>
+      <td class="src "><span class="cm">/**</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l83" href="#l83">83</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="c1">// Info has not been copied</span></td>
+      <td class="src "><span class="cm"> * @brief Read data function</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l84" href="#l84">84</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount uncoveredLine">&cross;</td>
-      <td class="src uncoveredLine"><span class="w">        </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l85" href="#l85">85</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+      <td class="src "><span class="cm"> * This function reads data from the queue</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l86" href="#l86">86</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l87" href="#l87">87</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">1407</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">exit</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l88" href="#l88">88</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l89" href="#l89">89</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l90" href="#l90">90</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l91" href="#l91">91</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm">/**</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l92" href="#l92">92</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @brief Read data function</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l93" href="#l93">93</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l94" href="#l94">94</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * This function reads data from the queue</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l95" href="#l95">95</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l96" href="#l96">96</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="cm"> * @param queue[in] Pointer to a Que_Queue struct type. This is the queue&#39;s control struct</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l97" href="#l97">97</a></td>
+      <td class="lineno"><a id="l88" href="#l88">88</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="cm"> * @param data[in] Pointer to the variable that has the info to read into the queue</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l98" href="#l98">98</a></td>
+      <td class="lineno"><a id="l89" href="#l89">89</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l99" href="#l99">99</a></td>
+      <td class="lineno"><a id="l90" href="#l90">90</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="cm"> * @retval False in case the data couldn&#39;t be read, otherwise True</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l100" href="#l100">100</a></td>
+      <td class="lineno"><a id="l91" href="#l91">91</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="cm">*/</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l101" href="#l101">101</a></td>
+      <td class="lineno"><a id="l92" href="#l92">92</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">471</td>
+      <td class="linecount coveredLine">104</td>
       <td class="src coveredLine"><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">Queue_readData</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="p">,</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="n">data</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l102" href="#l102">102</a></td>
+      <td class="lineno"><a id="l93" href="#l93">93</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l103" href="#l103">103</a></td>
+      <td class="lineno"><a id="l94" href="#l94">94</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">471</td>
+      <td class="linecount coveredLine">104</td>
       <td class="src coveredLine"><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l104" href="#l104">104</a></td>
+      <td class="lineno"><a id="l95" href="#l95">95</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l105" href="#l105">105</a></td>
+      <td class="lineno"><a id="l96" href="#l96">96</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
         <summary class="linebranchSummary">2/2</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 393 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 78 times.</div>
+          <div class="takenBranch">&check; Branch 0 taken 81 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 23 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount coveredLine">471</td>
+      <td class="linecount coveredLine">104</td>
       <td class="src coveredLine"><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">FALSE</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l106" href="#l106">106</a></td>
+      <td class="lineno"><a id="l97" href="#l97">97</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">    </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l107" href="#l107">107</a></td>
+      <td class="lineno"><a id="l98" href="#l98">98</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l108" href="#l108">108</a></td>
+      <td class="lineno"><a id="l99" href="#l99">99</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">393</td>
+      <td class="linecount coveredLine">81</td>
       <td class="src coveredLine"><span class="w">        </span><span class="n">memcpy</span><span class="p">(</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Buffer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">),</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="w"> </span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l109" href="#l109">109</a></td>
+      <td class="lineno"><a id="l100" href="#l100">100</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l110" href="#l110">110</a></td>
+      <td class="lineno"><a id="l101" href="#l101">101</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">81</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l102" href="#l102">102</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">81</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w">                            </span><span class="c1">// Queue is not full anymore</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l103" href="#l103">103</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">81</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="o">++</span><span class="p">;</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l104" href="#l104">104</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l105" href="#l105">105</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l106" href="#l106">106</a></td>
       <td class="linebranch">
         <details class="linebranchDetails">
-        <summary class="linebranchSummary">1/2</summary>
+        <summary class="linebranchSummary">2/2</summary>
         <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 393 times.</div>
-          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
+          <div class="takenBranch">&check; Branch 0 taken 12 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 69 times.</div>
         </div>
         </details>
       </td>
-      <td class="linecount partialCoveredLine">393</td>
-      <td class="src partialCoveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="w"> </span><span class="n">memcmp</span><span class="p">(</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Buffer</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Size</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount coveredLine">81</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l111" href="#l111">111</a></td>
+      <td class="lineno"><a id="l107" href="#l107">107</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l112" href="#l112">112</a></td>
+      <td class="lineno"><a id="l108" href="#l108">108</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                            </span><span class="c1">// Go to the beginning</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l109" href="#l109">109</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l110" href="#l110">110</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "></td>
     </tr>
     <tr class="source-line">
+      <td class="lineno"><a id="l111" href="#l111">111</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount "></td>
+      <td class="src "></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l112" href="#l112">112</a></td>
+      <td class="linebranch">
+        <details class="linebranchDetails">
+        <summary class="linebranchSummary">2/2</summary>
+        <div class="linebranchContents">
+          <div class="takenBranch">&check; Branch 0 taken 72 times.</div>
+          <div class="takenBranch">&check; Branch 1 taken 9 times.</div>
+        </div>
+        </details>
+      </td>
+      <td class="linecount coveredLine">81</td>
+      <td class="src coveredLine"><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="p">)</span></td>
+    </tr>
+    <tr class="source-line">
       <td class="lineno"><a id="l113" href="#l113">113</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">393</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">exit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l114" href="#l114">114</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">393</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Full</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FALSE</span><span class="p">;</span><span class="w">                            </span><span class="c1">// Queue is not full anymore</span></td>
+      <td class="linecount coveredLine">72</td>
+      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w">                        </span><span class="c1">// Queue is empty</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l115" href="#l115">115</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">393</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="o">++</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="w">        </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l116" href="#l116">116</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">            </span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l117" href="#l117">117</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="w">    </span><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l118" href="#l118">118</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">2/2</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 3 times.</div>
-          <div class="takenBranch">&check; Branch 1 taken 390 times.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount coveredLine">393</td>
-      <td class="src coveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">)</span></td>
+      <td class="linecount "></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l119" href="#l119">119</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">{</span></td>
+      <td class="linecount coveredLine">104</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">exit</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l120" href="#l120">120</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">3</td>
-      <td class="src coveredLine"><span class="w">                </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">                            </span><span class="c1">// Go to the beginning</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l121" href="#l121">121</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l122" href="#l122">122</a></td>
@@ -993,98 +986,91 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="cm">/**</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l124" href="#l124">124</a></td>
       <td class="linebranch">
-        <details class="linebranchDetails">
-        <summary class="linebranchSummary">1/2</summary>
-        <div class="linebranchContents">
-          <div class="takenBranch">&check; Branch 0 taken 393 times.</div>
-          <div class="notTakenBranch">&cross; Branch 1 not taken.</div>
-        </div>
-        </details>
       </td>
-      <td class="linecount partialCoveredLine">393</td>
-      <td class="src partialCoveredLine"><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Tail</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Head</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cm"> * @brief QueueEmpty function</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l125" href="#l125">125</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">{</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l126" href="#l126">126</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">393</td>
-      <td class="src coveredLine"><span class="w">                </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TRUE</span><span class="p">;</span><span class="w">                        </span><span class="c1">// Queue is empty</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cm"> * This function says if the queue is empty</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l127" href="#l127">127</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">            </span><span class="p">}</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l128" href="#l128">128</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="cm"> * @param queue[in] Pointer to a Que_Queue struct type. This is the queue&#39;s control struct</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l129" href="#l129">129</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">        </span><span class="p">}</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l130" href="#l130">130</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="cm"> * @retval True in case the queue is empty, otherwise False</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l131" href="#l131">131</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="w">    </span><span class="p">}</span></td>
+      <td class="src "><span class="cm">*/</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l132" href="#l132">132</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">Queue_isQueueEmpty</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="w"> </span><span class="p">)</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l133" href="#l133">133</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">471</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">exit</span><span class="p">;</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l134" href="#l134">134</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="p">}</span></td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="p">;</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l135" href="#l135">135</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="src "><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l136" href="#l136">136</a></td>
@@ -1098,98 +1084,98 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm">/**</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l138" href="#l138">138</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @brief QueueEmpty function</span></td>
+      <td class="src "><span class="cm">/**</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l139" href="#l139">139</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
+      <td class="src "><span class="cm"> * @brief FlushQueue function</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l140" href="#l140">140</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * This function says if the queue is empty</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l141" href="#l141">141</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
+      <td class="src "><span class="cm"> * This function restarts the queue</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l142" href="#l142">142</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @param queue[in] Pointer to a Que_Queue struct type. This is the queue&#39;s control struct</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l143" href="#l143">143</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
+      <td class="src "><span class="cm"> * @param queue[in] Pointer to a Que_Queue struct type. This is the queue&#39;s control struct</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l144" href="#l144">144</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @retval True in case the queue is empty, otherwise False</span></td>
+      <td class="src "><span class="cm"> * </span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l145" href="#l145">145</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm">*/</span></td>
+      <td class="src "><span class="cm"> * @retval None</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l146" href="#l146">146</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount coveredLine">78</td>
-      <td class="src coveredLine"><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">Queue_isQueueEmpty</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="w"> </span><span class="p">)</span></td>
+      <td class="linecount "></td>
+      <td class="src "><span class="cm">*/</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l147" href="#l147">147</a></td>
+      <td class="linebranch">
+      </td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">Queue_flushQueue</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="w"> </span><span class="p">)</span></td>
+    </tr>
+    <tr class="source-line">
+      <td class="lineno"><a id="l148" href="#l148">148</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
       <td class="src "><span class="p">{</span></td>
     </tr>
     <tr class="source-line">
-      <td class="lineno"><a id="l148" href="#l148">148</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">78</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">queue</span><span class="o">-&gt;</span><span class="n">Empty</span><span class="p">;</span></td>
-    </tr>
-    <tr class="source-line">
       <td class="lineno"><a id="l149" href="#l149">149</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="p">}</span></td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="w">    </span><span class="n">Queue_initQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">);</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l150" href="#l150">150</a></td>
       <td class="linebranch">
       </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
+      <td class="linecount coveredLine">12</td>
+      <td class="src coveredLine"><span class="p">}</span></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l151" href="#l151">151</a></td>
@@ -1203,108 +1189,10 @@
       <td class="linebranch">
       </td>
       <td class="linecount "></td>
-      <td class="src "><span class="cm">/**</span></td>
+      <td class="src "></td>
     </tr>
     <tr class="source-line">
       <td class="lineno"><a id="l153" href="#l153">153</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @brief FlushQueue function</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l154" href="#l154">154</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l155" href="#l155">155</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * This function restarts the queue</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l156" href="#l156">156</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l157" href="#l157">157</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @param queue[in] Pointer to a Que_Queue struct type. This is the queue&#39;s control struct</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l158" href="#l158">158</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * </span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l159" href="#l159">159</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm"> * @retval None</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l160" href="#l160">160</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="cm">*/</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l161" href="#l161">161</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">78</td>
-      <td class="src coveredLine"><span class="kt">void</span><span class="w"> </span><span class="nf">Queue_flushQueue</span><span class="p">(</span><span class="w"> </span><span class="n">Que_Queue</span><span class="w"> </span><span class="o">*</span><span class="n">queue</span><span class="w"> </span><span class="p">)</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l162" href="#l162">162</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "><span class="p">{</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l163" href="#l163">163</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">78</td>
-      <td class="src coveredLine"><span class="w">    </span><span class="n">Queue_initQueue</span><span class="p">(</span><span class="n">queue</span><span class="p">);</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l164" href="#l164">164</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount coveredLine">78</td>
-      <td class="src coveredLine"><span class="p">}</span></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l165" href="#l165">165</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l166" href="#l166">166</a></td>
-      <td class="linebranch">
-      </td>
-      <td class="linecount "></td>
-      <td class="src "></td>
-    </tr>
-    <tr class="source-line">
-      <td class="lineno"><a id="l167" href="#l167">167</a></td>
       <td class="linebranch">
       </td>
       <td class="linecount "></td>

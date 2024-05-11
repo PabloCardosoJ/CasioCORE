@@ -27,9 +27,6 @@ uint8_t timerID = 0;
  */
 long milliseconds( void )
 {
-    /*
-        Returns time in milliseconds
-    */
     return clock() / ( CLOCKS_PER_SEC / 1000 );
 }
 
@@ -227,7 +224,7 @@ void Sched_startScheduler( Sched_Scheduler *scheduler )
                 {
                     actual_timer->callbackPtr();
                 }
-                else if ( actual_timer->count > 0 )
+                else
                 {
                     actual_timer->count -= scheduler->tick; // Subtracting elapsed time from timeout
                 }

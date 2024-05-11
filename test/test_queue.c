@@ -370,6 +370,53 @@ void test__Queue_WriteInFullBuffer()
 
 
     TEST_ASSERT_EQUAL( TRUE, queue.Full );
-    printf("Read No data test succeed");
+    printf("Write in full buffer test succeed");
+}
+
+/**
+ * @brief Buffer is full test
+ * 
+ * This test verify if Tail moved as expected when all data is read
+*/
+void test__Queue_fillingQueue()
+{
+    uint8_t dato = 0xFF;
+    Queue_initQueue( &queue );
+    queue.Elements = 1u;
+    uint8_t array[queue.Elements];
+    queue.Buffer = &array;
+    queue.Size = sizeof( dato );
+    
+    Queue_writeData( &queue, &dato );
+    Queue_readData( &queue, &array );
+    Queue_readData( &queue, &array );
+
+
+    TEST_ASSERT_EQUAL( 0, queue.Tail );
+    printf("Filling Queue test succeed");
+}
+
+
+/**
+ * @brief Read some data test
+ * 
+ * This test verify if Tail moved as expected when some data is read
+*/
+void test__Queue_readSomeData()
+{
+    uint8_t dato = 0xFF;
+    Queue_initQueue( &queue );
+    queue.Elements = 5u;
+    uint8_t array[queue.Elements];
+    queue.Buffer = &array;
+    queue.Size = sizeof( dato );
+    
+    Queue_writeData( &queue, &dato );
+    Queue_writeData( &queue, &dato );
+    Queue_readData( &queue, &array );
+
+
+    TEST_ASSERT_NOT_EQUAL( queue.Head, queue.Tail );
+    printf("Read some data test succeed");
 }
 

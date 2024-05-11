@@ -19,6 +19,7 @@
   @} */
 
 
+
 /**
  * @brief Clock init function
  * 
@@ -304,6 +305,7 @@ void Rtcc_periodicTask( Rtcc_Clock *rtcc )
                         {
                             rtcc->tm_year = 1900;
                         }
+
 
                         /* Getting the number of days of February */
                         FebruarysDays( rtcc, rtcc->tm_year );

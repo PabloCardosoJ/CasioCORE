@@ -1,0 +1,79 @@
+---
+:source:
+  :path: test
+  :file: test_rtcc.c
+:successes:
+- :test: test__initClock
+  :line: 31
+  :message: ''
+  :unity_test_time: 0
+- :test: test__setTime
+  :line: 50
+  :message: ''
+  :unity_test_time: 0
+- :test: test__setDate
+  :line: 73
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getTime
+  :line: 103
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getDate
+  :line: 126
+  :message: ''
+  :unity_test_time: 0
+- :test: test__getAlarm
+  :line: 152
+  :message: ''
+  :unity_test_time: 0
+- :test: test__periodicTask
+  :line: 174
+  :message: ''
+  :unity_test_time: 0
+- :test: test__leapYear_2024
+  :line: 206
+  :message: ''
+  :unity_test_time: 0
+- :test: test__leapYear_2001
+  :line: 220
+  :message: ''
+  :unity_test_time: 0
+- :test: test__ClearAlarm
+  :line: 234
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Rtcc_getAlarmFlag
+  :line: 253
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Rtcc_setAlarm
+  :line: 281
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Rtcc_periodictTask_Year_Bigger_Than_2100
+  :line: 302
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 13
+  :passed: 13
+  :failed: 0
+  :ignored: 0
+:stdout:
+- initClock test succeed
+- setTime test succeed
+- setDate test succeed
+- getTime test succeed
+- getDate test succeed
+- getAlarm test succeed
+- periodicTask test succeed
+- leapYear2024 test succeed
+- leapYear2001 test succeed
+- ClearAlarm test succeed
+- GetAlarmFlag test succeed
+- SetAlarm test succeed
+- Year Bigger than 2100 test succeed
+:time: 0.1392065999989427

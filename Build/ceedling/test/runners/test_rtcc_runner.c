@@ -19,10 +19,11 @@ extern void test__getDate();
 extern void test__getAlarm();
 extern void test__periodicTask();
 extern void test__leapYear_2024(void);
-extern void test__leapYear_2004(void);
+extern void test__leapYear_2001(void);
 extern void test__ClearAlarm(void);
 extern void test__Rtcc_getAlarmFlag(void);
 extern void test__Rtcc_setAlarm(void);
+extern void test__Rtcc_periodictTask_Year_Bigger_Than_2100(void);
 
 
 /*=======Mock Management=====*/
@@ -100,10 +101,11 @@ int main(void)
   run_test(test__getAlarm, "test__getAlarm", 152);
   run_test(test__periodicTask, "test__periodicTask", 174);
   run_test(test__leapYear_2024, "test__leapYear_2024", 206);
-  run_test(test__leapYear_2004, "test__leapYear_2004", 219);
-  run_test(test__ClearAlarm, "test__ClearAlarm", 232);
-  run_test(test__Rtcc_getAlarmFlag, "test__Rtcc_getAlarmFlag", 250);
-  run_test(test__Rtcc_setAlarm, "test__Rtcc_setAlarm", 277);
+  run_test(test__leapYear_2001, "test__leapYear_2001", 220);
+  run_test(test__ClearAlarm, "test__ClearAlarm", 234);
+  run_test(test__Rtcc_getAlarmFlag, "test__Rtcc_getAlarmFlag", 253);
+  run_test(test__Rtcc_setAlarm, "test__Rtcc_setAlarm", 281);
+  run_test(test__Rtcc_periodictTask_Year_Bigger_Than_2100, "test__Rtcc_periodictTask_Year_Bigger_Than_2100", 302);
 
   return UnityEnd();
 }

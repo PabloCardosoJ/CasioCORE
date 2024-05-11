@@ -161,7 +161,7 @@ void test__getAlarm()
     TEST_ASSERT_EQUAL( 22, hour );
     TEST_ASSERT_EQUAL( 8, min );
 
-    printf( "getDate test succeed" );
+    printf( "getAlarm test succeed" );
 }
 
 
@@ -208,6 +208,7 @@ void test__leapYear_2024(void)
     Rtcc_setDate( &Rtcc, 31, 12, 2024, 5 );
 
     TEST_ASSERT_EQUAL(29, Rtcc.mt_days[2]);
+    printf( "leapYear2024 test succeed" );
 }
 
 /**
@@ -221,6 +222,7 @@ void test__leapYear_2001(void)
     Rtcc_setDate( &Rtcc, 31, 12, 2001, 5 );
 
     TEST_ASSERT_EQUAL(28, Rtcc.mt_days[2]);
+    printf( "leapYear2001 test succeed" );
 }
 
 
@@ -239,6 +241,7 @@ void test__ClearAlarm(void)
 
     TEST_ASSERT_EQUAL( FALSE, Rtcc.ctrl.bits.al_active );
     TEST_ASSERT_EQUAL( FALSE, Rtcc.ctrl.bits.al_set );
+    printf( "ClearAlarm test succeed" );
 }
 
 
@@ -265,6 +268,7 @@ void test__Rtcc_getAlarmFlag(void)
 
     TEST_ASSERT_EQUAL( TRUE, alarmFlagT );
     TEST_ASSERT_EQUAL( FALSE, alarmFlagF );
+    printf( "GetAlarmFlag test succeed" );
 }
 
 
@@ -285,6 +289,7 @@ void test__Rtcc_setAlarm(void)
     TEST_ASSERT_EQUAL( FALSE, res2 );
     TEST_ASSERT_EQUAL( FALSE, res3 );
     TEST_ASSERT_EQUAL( FALSE, res4 );
+    printf( "SetAlarm test succeed" );
 }
 
 
@@ -294,7 +299,7 @@ void test__Rtcc_setAlarm(void)
  * This test verify if periodicTask set year as 1900 when year gets bigger
  * than 2100
 */
-void Rtcc_periodictTask_Year_Bigger_Than_2100(void)
+void test__Rtcc_periodictTask_Year_Bigger_Than_2100(void)
 {
     uint8_t day, month, weekday;
     uint16_t year;
@@ -307,6 +312,7 @@ void Rtcc_periodictTask_Year_Bigger_Than_2100(void)
     Rtcc_getDate( &Rtcc, &day, &month, &year, &weekday );
 
     TEST_ASSERT_EQUAL( 1900, year );
+    printf( "Year Bigger than 2100 test succeed" );
 }
 
 

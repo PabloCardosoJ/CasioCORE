@@ -23,6 +23,8 @@ extern void test__Queue__isQueueEmpty();
 extern void test__Queue__flushQueue();
 extern void test__Queue_readNoData();
 extern void test__Queue_WriteInFullBuffer();
+extern void test__Queue_fillingQueue();
+extern void test__Queue_readSomeData();
 
 
 /*=======Mock Management=====*/
@@ -104,6 +106,8 @@ int main(void)
   run_test(test__Queue__flushQueue, "test__Queue__flushQueue", 312);
   run_test(test__Queue_readNoData, "test__Queue_readNoData", 337);
   run_test(test__Queue_WriteInFullBuffer, "test__Queue_WriteInFullBuffer", 360);
+  run_test(test__Queue_fillingQueue, "test__Queue_fillingQueue", 381);
+  run_test(test__Queue_readSomeData, "test__Queue_readSomeData", 405);
 
   return UnityEnd();
 }

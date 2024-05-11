@@ -35,28 +35,32 @@
   :line: 206
   :message: ''
   :unity_test_time: 0
+- :test: test__leapYear_2001
+  :line: 220
+  :message: ''
+  :unity_test_time: 0
 - :test: test__ClearAlarm
-  :line: 232
+  :line: 234
   :message: ''
   :unity_test_time: 0
 - :test: test__Rtcc_getAlarmFlag
-  :line: 250
+  :line: 253
   :message: ''
   :unity_test_time: 0
 - :test: test__Rtcc_setAlarm
-  :line: 277
+  :line: 281
   :message: ''
   :unity_test_time: 0
-:failures:
-- :test: test__leapYear_2004
-  :line: 223
-  :message: Expected 29 Was 28
+- :test: test__Rtcc_periodictTask_Year_Bigger_Than_2100
+  :line: 302
+  :message: ''
   :unity_test_time: 0
+:failures: []
 :ignores: []
 :counts:
-  :total: 12
-  :passed: 11
-  :failed: 1
+  :total: 13
+  :passed: 13
+  :failed: 0
   :ignored: 0
 :stdout:
 - initClock test succeed
@@ -64,6 +68,12 @@
 - setDate test succeed
 - getTime test succeed
 - getDate test succeed
-- getDate test succeed
+- getAlarm test succeed
 - periodicTask test succeed
-:time: 0.0825637999951141
+- leapYear2024 test succeed
+- leapYear2001 test succeed
+- ClearAlarm test succeed
+- GetAlarmFlag test succeed
+- SetAlarm test succeed
+- Year Bigger than 2100 test succeed
+:time: 0.04816180000125314

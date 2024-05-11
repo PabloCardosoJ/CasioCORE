@@ -51,11 +51,19 @@
   :line: 360
   :message: ''
   :unity_test_time: 0
+- :test: test__Queue_fillingQueue
+  :line: 381
+  :message: ''
+  :unity_test_time: 0
+- :test: test__Queue_readSomeData
+  :line: 405
+  :message: ''
+  :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 12
-  :passed: 12
+  :total: 14
+  :passed: 14
   :failed: 0
   :ignored: 0
 :stdout:
@@ -68,5 +76,7 @@
 - Empty queue test succeed
 - Flush queue test succeed
 - Read No data test succeed
-- Read No data test succeed
-:time: 0.01156700000865385
+- Write in full buffer test succeed
+- Filling Queue test succeed
+- Read some data test succeed
+:time: 0.00947960000121384
